@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Preserving in Data Mining &mdash; Sandhya Dhanasekar</title>
+<meta name="description" content="A systematic review of privacy-preserving techniques in data mining, weighing their strengths, weaknesses and future directions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Sandhya<span class="brand-tagline">Analyst</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-amber">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="project-detail-hero">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="breadcrumb">
+        <a href="projects.html">Projects</a>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+        <span>Literature Review</span>
+      </div>
+      <h1>Privacy Preserving in Data Mining</h1>
+      <p class="subtitle">The need to protect privacy in data mining has emerged as a fundamental requirement when sharing confidential information for data analysis, validation, and publication.</p>
+      <div class="project-meta-strip">
+        <div class="project-meta-item">
+          <div class="meta-icon"><span class="material-symbols-outlined" style="font-size:18px;">person</span></div>
+          <div><div class="meta-label">Author</div><div class="meta-value">Sandhya Dhanasekar</div></div>
+        </div>
+        <div class="project-meta-item">
+          <div class="meta-icon"><span class="material-symbols-outlined" style="font-size:18px;">library_books</span></div>
+          <div><div class="meta-label">Type</div><div class="meta-value">Literature Review</div></div>
+        </div>
+        <div class="project-meta-item">
+          <div class="meta-icon"><span class="material-symbols-outlined" style="font-size:18px;">shield</span></div>
+          <div><div class="meta-label">Focus</div><div class="meta-value">Data Ethics</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== INTRODUCTION ====== -->
+<section style="padding:40px 0 60px;">
+  <div class="wrap">
+    <div class="project-article reveal">
+      <h2>1. Introduction</h2>
+      <p>Data is central to modern knowledge creation, business conduct, and governance [4]. However, mining large datasets often exposes sensitive individual information to multiple entities (data collectors, owners, users, and miners) [4].</p>
+      <p>A major privacy risk occurs when non-sensitive identifiers are linked to personal, sensitive information (e.g., physical, economic, or medical data) [4]. Consequently, data owners frequently hesitate to share information, creating barriers to effective data mining [4]. To address this, privacy-preserving techniques aim to remove an individual's identifiability without compromising the data's utility [4].</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DATA CATEGORIZATION ====== -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Data Taxonomy</p>
+      <h2>2. Data Privacy and Categorization</h2>
+      <p>Before applying privacy-preserving methods, it is crucial to understand how data is categorized. Pramanik M et al. (2021) classify data into four distinct groups [4]:</p>
+    </div>
+    
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="icon"><span class="material-symbols-outlined">badge</span></div>
+        <h3>Identifiers (ID)</h3>
+        <p>Directly and uniquely identify an individual (e.g., full name, social security number) [4].</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><span class="material-symbols-outlined">location_on</span></div>
+        <h3>Quasi-identifiers (QID)</h3>
+        <p>Indirectly identify an individual when combined with external data (e.g., gender, age, postal code) [4].</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><span class="material-symbols-outlined">health_and_safety</span></div>
+        <h3>Sensitive Attributes (SA)</h3>
+        <p>Private data that must be protected, such as medical history and salary data [4].</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><span class="material-symbols-outlined">public</span></div>
+        <h3>Insensitive Attributes</h3>
+        <p>General, non-risky data that does not compromise individual privacy [4].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== METHODOLOGY ====== -->
+<section style="padding:90px 0;">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:800px;">
+      <p class="eyebrow">Techniques</p>
+      <h2>3. Methods of Privacy-Preserving Data Mining (PPDM)</h2>
+      <p>PPDM involves conducting data mining on datasets containing confidential information in a multi-party setting, ensuring that each party's data remains undisclosed to others [4]. Common techniques include:</p>
+    </div>
+
+    <div class="methodology-grid">
+      <!-- Method 1 -->
+      <div class="methodology-card reveal">
+        <div class="method-header">
+          <div class="method-icon"><span class="material-symbols-outlined">blur_on</span></div>
+          <h3>3.1 Data Perturbation</h3>
+        </div>
+        <p>This method maintains statistical integrity by applying randomization and micro-aggregation to original data [4]. Research by Huang Z et al. (2005) explored how data correlation affects privacy in randomly perturbed datasets [4]. They proposed reconstruction methods based on Principal Component Analysis (PCA) and Bayes Estimate (BE), finding that the BE-based method was superior [4]. To prevent malicious data reconstruction, a modified random perturbation method using correlated random noises is utilized [4].</p>
+      </div>
+      
+      <!-- Method 2 -->
+      <div class="methodology-card reveal">
+        <div class="method-header">
+          <div class="method-icon"><span class="material-symbols-outlined">person_off</span></div>
+          <h3>3.2 Anonymization</h3>
+        </div>
+        <p>Anonymization safeguards data by removing identifiable details [4].</p>
+        <ul style="margin-top:12px; padding-left:20px; color:var(--slate);">
+          <li style="margin-bottom:8px;"><strong>k-anonymity:</strong> Ensures that each row in a database cannot be distinguished from at least <em>k-1</em> other rows [4].</li>
+          <li><strong>Micro-aggregation for p-sensitive k-anonymity:</strong> Proposed by Solanas A et al. (2008), this method overcomes the information loss associated with traditional generalization and suppression techniques [4].</li>
+        </ul>
+      </div>
+
+      <!-- Method 3 -->
+      <div class="methodology-card reveal">
+        <div class="method-header">
+          <div class="method-icon"><span class="material-symbols-outlined">security_update_warning</span></div>
+          <h3>3.3 Differential Privacy</h3>
+        </div>
+        <p>Proposed by Dwork C (2008), this model protects database query results, specifically preventing the disclosure of a single record's existence across multiple databases [4]. Sanchez D et al. (2013) combined individual ranking micro-aggregation with e-differential privacy (adding Laplacian noise) to reduce noise scale and improve data utility [4].</p>
+      </div>
+
+      <!-- Method 4 -->
+      <div class="methodology-card reveal">
+        <div class="method-header">
+          <div class="method-icon"><span class="material-symbols-outlined">account_tree</span></div>
+          <h3>3.4 Hybrid Techniques</h3>
+        </div>
+        <p>Researchers have combined methods to enhance protection [4]. For instance, Bhagat B et al. (2015) combined randomization and generalization to improve accuracy and allow data reconstruction without information loss [4]. Another hybrid approach combines noise addition with Secure Multiparty Computation (SMC), and pairs AES encryption with anonymization for superior security [4].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SHORTCOMINGS & FUTURE ====== -->
+<section class="section-deep">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" style="color:#b5e48c;">Looking Ahead</p>
+      <h2>4. Shortcomings and Future Directions</h2>
+      <p style="font-size:1.1rem; max-width:800px; margin-bottom:30px;">Despite the availability of various PPDM techniques, significant shortcomings remain [4]. These include:</p>
+      
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
+          <h4 style="color:#fff;">Vulnerabilities</h4>
+          <p style="margin:0; font-size:0.95rem;">Vulnerabilities exist in established methods (e.g., specific attacks against k-anonymity) [4].</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
+          <h4 style="color:#fff;">Data Integrity</h4>
+          <p style="margin:0; font-size:0.95rem;">Challenges in data distribution, cloud computing privacy, and maintaining the integrity of mining results [4].</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
+          <h4 style="color:#fff;">Scalability</h4>
+          <p style="margin:0; font-size:0.95rem;">Issues balancing data utility with scalability and performance when handling massive datasets [4].</p>
+        </div>
+      </div>
+      
+      <p style="margin-top:40px; font-size:1.1rem; max-width:800px; color:#b5e48c;">Future models must be efficient, scalable, and capable of handling large volumes of data [4]. They must combine different functionalities to meet the diverse requirements of clients while preserving both privacy and data integrity [4].</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CONCLUSION ====== -->
+<section style="padding:80px 0;">
+  <div class="wrap">
+    <div class="project-article reveal" style="text-align:center; max-width:800px; margin:0 auto;">
+      <h2 style="font-size:2.2rem;">5. Conclusion</h2>
+      <p style="font-size:1.15rem; color:var(--navy);">As digital data grows at an unprecedented rate, current PPDM methods struggle to keep up [4]. Privacy-preserving big data analytics is still evolving, and current operations may fail to guarantee user privacy efficiently [4]. A comprehensive understanding of state-of-the-art methodologies is required to design the next generation of privacy-preserving big data analytics systems [4].</p>
+      
+      <div style="margin-top:40px;">
+        <a href="assets/Privacy%20Preserving%20in%20Data%20Mining.pdf" target="_blank" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
+          <span class="material-symbols-outlined">picture_as_pdf</span>
+          View Original PDF Report
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="copyright">&copy; 2026 Sandhya Dhanasekar. Built for Impact.</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

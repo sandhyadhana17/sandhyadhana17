@@ -1,83 +1,664 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Sandhya Dhanasekar</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Sandhya Dhanasekar</title>
+  <meta name="description"
+    content="Get in touch with Sandhya Dhanasekar &mdash; Impact Analyst based in Chennai, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
+
 <body>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html">Sandhya<span class="brand-tagline">Analyst</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <nav class="links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="btn btn-amber">Let's talk</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero" style="padding-bottom:20px;">
-  <div class="wrap">
-    <div class="reveal" style="max-width:600px;">
-      <p class="eyebrow">Contact</p>
-      <h1>Let's talk about how data can help you ;)</h1>
-      <p style="font-size:1.05rem;">Open to opportunities in behavioural research, monitoring &amp; evaluation, data analysis, and programme delivery. Based in Chennai, India — happy to work remotely or relocate.</p>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Sandhya<span
+          class="brand-tagline">Analyst</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-amber">Let's talk</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section style="padding-top:20px;">
-  <div class="wrap contact-grid">
-    <div class="reveal">
-      <h3 style="margin-bottom:26px;">Reach me directly</h3>
+  <!-- ====== CARD-CENTERED CONTACT PAGE ====== -->
+  <section class="contact-card-page">
+    <div class="wrap">
+      <div class="contact-card-layout reveal">
 
-      <div class="contact-detail">
-        <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></span>
-        <a href="mailto:sandhyadhanasekar7@gmail.com">sandhyadhana17gmail.com</a>
+        <!-- 3D Interactive Business Card -->
+        <div class="bcard-scene bcard-scene--lg" id="bcardScene">
+          <div class="bcard" id="bcard">
+            <!-- FRONT -->
+            <div class="bcard-face bcard-front">
+              <div class="bcard-spotlight" id="bcardSpotlight"></div>
+              <div class="bcard-front-content">
+                <div class="bcard-name">SANDHYA DHANASEKAR</div>
+                <div class="bcard-title">Impact analyst</div>
+              </div>
+            </div>
+            <!-- BACK -->
+            <div class="bcard-face bcard-back">
+              <div class="bcard-spotlight" id="bcardSpotlightBack"></div>
+              <div class="bcard-back-content">
+                <div class="bcard-back-left">
+                  <a href="https://www.linkedin.com/in/sandhya-dhanasekar" target="_blank" rel="noopener"
+                    class="bcard-qr-link" title="Connect on LinkedIn">
+                    <svg class="bcard-qr-svg" viewBox="0 0 200 200" width="140" height="140">
+                      <!-- QR Code artistic representation -->
+                      <rect width="200" height="200" fill="white" rx="8" />
+                      <!-- Corner markers -->
+                      <rect x="10" y="10" width="44" height="44" rx="4" fill="#184e77" />
+                      <rect x="16" y="16" width="32" height="32" rx="2" fill="#e0f7fa" />
+                      <rect x="22" y="22" width="20" height="20" rx="2" fill="#184e77" />
+                      <rect x="146" y="10" width="44" height="44" rx="4" fill="#184e77" />
+                      <rect x="152" y="16" width="32" height="32" rx="2" fill="#e0f7fa" />
+                      <rect x="158" y="22" width="20" height="20" rx="2" fill="#184e77" />
+                      <rect x="10" y="146" width="44" height="44" rx="4" fill="#184e77" />
+                      <rect x="16" y="152" width="32" height="32" rx="2" fill="#e0f7fa" />
+                      <rect x="22" y="158" width="20" height="20" rx="2" fill="#184e77" />
+                      <!-- Data dots pattern -->
+                      <g fill="#184e77">
+                        <rect x="64" y="10" width="8" height="8" rx="1" />
+                        <rect x="80" y="10" width="8" height="8" rx="1" />
+                        <rect x="96" y="10" width="8" height="8" rx="1" />
+                        <rect x="120" y="10" width="8" height="8" rx="1" />
+                        <rect x="64" y="26" width="8" height="8" rx="1" />
+                        <rect x="104" y="26" width="8" height="8" rx="1" />
+                        <rect x="128" y="26" width="8" height="8" rx="1" />
+                        <rect x="64" y="42" width="8" height="8" rx="1" />
+                        <rect x="80" y="42" width="8" height="8" rx="1" />
+                        <rect x="112" y="42" width="8" height="8" rx="1" />
+                        <rect x="10" y="64" width="8" height="8" rx="1" />
+                        <rect x="26" y="64" width="8" height="8" rx="1" />
+                        <rect x="42" y="64" width="8" height="8" rx="1" />
+                        <rect x="64" y="64" width="8" height="8" rx="1" />
+                        <rect x="96" y="64" width="8" height="8" rx="1" />
+                        <rect x="128" y="64" width="8" height="8" rx="1" />
+                        <rect x="160" y="64" width="8" height="8" rx="1" />
+                        <rect x="176" y="64" width="8" height="8" rx="1" />
+                        <rect x="10" y="80" width="8" height="8" rx="1" />
+                        <rect x="42" y="80" width="8" height="8" rx="1" />
+                        <rect x="80" y="80" width="8" height="8" rx="1" />
+                        <rect x="112" y="80" width="8" height="8" rx="1" />
+                        <rect x="144" y="80" width="8" height="8" rx="1" />
+                        <rect x="10" y="96" width="8" height="8" rx="1" />
+                        <rect x="26" y="96" width="8" height="8" rx="1" />
+                        <rect x="42" y="96" width="8" height="8" rx="1" />
+                        <rect x="64" y="96" width="8" height="8" rx="1" />
+                        <rect x="96" y="96" width="8" height="8" rx="1" />
+                        <rect x="128" y="96" width="8" height="8" rx="1" />
+                        <rect x="160" y="96" width="8" height="8" rx="1" />
+                        <rect x="176" y="96" width="8" height="8" rx="1" />
+                        <rect x="10" y="112" width="8" height="8" rx="1" />
+                        <rect x="42" y="112" width="8" height="8" rx="1" />
+                        <rect x="64" y="112" width="8" height="8" rx="1" />
+                        <rect x="80" y="112" width="8" height="8" rx="1" />
+                        <rect x="112" y="112" width="8" height="8" rx="1" />
+                        <rect x="144" y="112" width="8" height="8" rx="1" />
+                        <rect x="10" y="128" width="8" height="8" rx="1" />
+                        <rect x="26" y="128" width="8" height="8" rx="1" />
+                        <rect x="42" y="128" width="8" height="8" rx="1" />
+                        <rect x="80" y="128" width="8" height="8" rx="1" />
+                        <rect x="96" y="128" width="8" height="8" rx="1" />
+                        <rect x="128" y="128" width="8" height="8" rx="1" />
+                        <rect x="160" y="128" width="8" height="8" rx="1" />
+                        <rect x="176" y="128" width="8" height="8" rx="1" />
+                        <!-- Center area -->
+                        <rect x="80" y="64" width="8" height="8" rx="1" opacity="0.5" />
+                        <rect x="96" y="80" width="8" height="8" rx="1" opacity="0.5" />
+                        <rect x="80" y="96" width="8" height="8" rx="1" opacity="0.5" />
+                        <!-- Bottom rows -->
+                        <rect x="64" y="144" width="8" height="8" rx="1" />
+                        <rect x="80" y="144" width="8" height="8" rx="1" />
+                        <rect x="112" y="144" width="8" height="8" rx="1" />
+                        <rect x="144" y="144" width="8" height="8" rx="1" />
+                        <rect x="176" y="144" width="8" height="8" rx="1" />
+                        <rect x="64" y="160" width="8" height="8" rx="1" />
+                        <rect x="96" y="160" width="8" height="8" rx="1" />
+                        <rect x="128" y="160" width="8" height="8" rx="1" />
+                        <rect x="160" y="160" width="8" height="8" rx="1" />
+                        <rect x="64" y="176" width="8" height="8" rx="1" />
+                        <rect x="80" y="176" width="8" height="8" rx="1" />
+                        <rect x="96" y="176" width="8" height="8" rx="1" />
+                        <rect x="128" y="176" width="8" height="8" rx="1" />
+                        <rect x="144" y="176" width="8" height="8" rx="1" />
+                        <rect x="176" y="176" width="8" height="8" rx="1" />
+                      </g>
+                      <!-- LinkedIn icon in center -->
+                      <rect x="78" y="78" width="44" height="44" rx="6" fill="#184e77" />
+                      <text x="100" y="106" text-anchor="middle" fill="#e0f7fa" font-family="sans-serif"
+                        font-weight="700" font-size="22">in</text>
+                    </svg>
+                    <span class="bcard-qr-label">Scan to connect on LinkedIn</span>
+                  </a>
+                </div>
+                <div class="bcard-back-right">
+                  <div class="bcard-back-heading">Let's Work Together</div>
+                  <div class="bcard-divider">
+                    <svg width="160" height="12" viewBox="0 0 160 12">
+                      <line x1="0" y1="6" x2="160" y2="6" stroke="#184e77" stroke-width="1" />
+                      <polygon points="0,6 6,3 6,9" fill="#184e77" />
+                      <polygon points="160,6 154,3 154,9" fill="#184e77" />
+                      <circle cx="40" cy="6" r="2" fill="#184e77" />
+                      <circle cx="60" cy="6" r="2" fill="#184e77" />
+                      <circle cx="80" cy="6" r="2" fill="#184e77" />
+                      <circle cx="100" cy="6" r="2" fill="#184e77" />
+                      <circle cx="120" cy="6" r="2" fill="#184e77" />
+                    </svg>
+                  </div>
+                  <div class="bcard-contact-label">Contact me</div>
+                  <a href="mailto:sandhyadhana17@gmail.com" class="bcard-contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5">
+                      <path d="M4 4h16v16H4z" />
+                      <path d="M4 6l8 7 8-7" />
+                    </svg>
+                    sandhyadhana17@gmail.com
+                  </a>
+                  <a href="https://sandhyadhanasekar.com" target="_blank" class="bcard-contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="1.5">
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    sandhyadhanasekar.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subtle action links below the card -->
+        <div class="contact-card-actions">
+          <a href="mailto:sandhyadhana17@gmail.com" class="contact-action-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 4h16v16H4z" />
+              <path d="M4 6l8 7 8-7" />
+            </svg>
+            Email me
+          </a>
+          <a href="https://www.linkedin.com/in/sandhya-dhanasekar" target="_blank" rel="noopener"
+            class="contact-action-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 0 0-4 0" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="assets/Sandhya%20Dhanasekar_CV_Impact%20Analyst.pdf" class="contact-action-link" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
+            </svg>
+            Download resume
+          </a>
+          <span class="contact-action-location">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Chennai, India
+          </span>
+        </div>
+
       </div>
+    </div>
+  </section>
 
-      <div class="contact-detail">
-        <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <span>Chennai, India</span>
+  <style>
+    /* ---- Contact Card Page ---- */
+    .contact-card-page {
+      min-height: calc(100vh - 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 0;
+      background: linear-gradient(160deg, var(--bg) 0%, rgba(181, 228, 140, 0.08) 50%, rgba(22, 138, 173, 0.04) 100%);
+    }
+
+    .contact-card-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    /* Bigger card scene */
+    .bcard-scene--lg {
+      width: 680px;
+      height: 400px;
+    }
+
+    /* Action links row below card */
+    .contact-card-actions {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contact-action-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--navy);
+      padding: 12px 24px;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      background: var(--card);
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .contact-action-link:hover {
+      background: var(--sky);
+      border-color: var(--sky);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px -6px rgba(22, 138, 173, 0.3);
+    }
+
+    .contact-action-link svg {
+      opacity: 0.7;
+      transition: opacity .2s ease;
+    }
+
+    .contact-action-link:hover svg {
+      opacity: 1;
+      stroke: #fff;
+    }
+
+    .contact-action-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--slate);
+      padding: 12px 0;
+    }
+
+    .contact-action-location svg {
+      opacity: 0.5;
+    }
+
+    /* ---- 3D Business Card ---- */
+    .bcard-scene {
+      perspective: 1200px;
+      width: 580px;
+      height: 340px;
+      cursor: pointer;
+    }
+
+    .bcard {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+    }
+
+    .bcard.flipped {
+      transform: rotateY(180deg) !important;
+    }
+
+    .bcard-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow:
+        0 20px 60px -16px rgba(24, 78, 119, 0.25),
+        0 8px 24px -8px rgba(24, 78, 119, 0.12);
+    }
+
+    .bcard-spotlight {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s ease;
+      z-index: 2;
+      background: radial-gradient(350px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(255, 255, 255, 0.18), transparent 60%);
+    }
+
+    .bcard-scene:hover .bcard-spotlight {
+      opacity: 1;
+    }
+
+    /* FRONT FACE */
+    .bcard-front {
+      background: #e0f7fa;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .bcard-front-content {
+      padding: 48px 52px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bcard-name {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #184e77;
+      letter-spacing: 0.02em;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .bcard-title {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #184e77;
+      opacity: 0.75;
+    }
+
+    /* BACK FACE */
+    .bcard-back {
+      background: #e0f7fa;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: stretch;
+    }
+
+    .bcard-back-content {
+      display: flex;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bcard-back-left {
+      width: 42%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-right: 1px solid rgba(24, 78, 119, 0.1);
+    }
+
+    .bcard-qr-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #184e77;
+      transition: transform .25s ease;
+      cursor: pointer;
+    }
+
+    .bcard-qr-link:hover {
+      transform: scale(1.06);
+    }
+
+    .bcard-qr-link:hover .bcard-qr-svg {
+      filter: drop-shadow(0 4px 12px rgba(24, 78, 119, 0.3));
+    }
+
+    .bcard-qr-svg {
+      transition: filter .3s ease;
+    }
+
+    .bcard-qr-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-align: center;
+      line-height: 1.4;
+      color: #184e77;
+      opacity: 0.7;
+      max-width: 140px;
+    }
+
+    .bcard-back-right {
+      width: 58%;
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .bcard-back-heading {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 1.35rem;
+      font-style: italic;
+      color: #184e77;
+      margin-bottom: 10px;
+    }
+
+    .bcard-divider {
+      margin-bottom: 14px;
+      line-height: 0;
+    }
+
+    .bcard-contact-label {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 0.95rem;
+      color: #184e77;
+      margin-bottom: 12px;
+    }
+
+    .bcard-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #184e77;
+      text-decoration: none;
+      padding: 7px 10px;
+      margin: 0 -10px;
+      border-radius: 10px;
+      transition: background .2s ease, transform .2s ease;
+      cursor: pointer;
+    }
+
+    .bcard-contact-item:hover {
+      background: rgba(24, 78, 119, 0.08);
+      transform: translateX(4px);
+      color: #168aad;
+    }
+
+    .bcard-contact-item svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    .bcard-contact-item:hover svg {
+      opacity: 1;
+    }
+
+    /* Flip hint */
+    .bcard-scene::after {
+      content: "Click to flip · Hover to tilt";
+      position: absolute;
+      bottom: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--slate-light);
+      opacity: 0.5;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    @media (max-width:740px) {
+
+      .bcard-scene,
+      .bcard-scene--lg {
+        width: 100%;
+        max-width: 380px;
+        height: 460px;
+      }
+
+      .bcard-back-content {
+        flex-direction: column;
+      }
+
+      .bcard-back-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(24, 78, 119, 0.1);
+        padding: 16px;
+      }
+
+      .bcard-back-right {
+        width: 100%;
+        padding: 16px 20px;
+      }
+
+      .bcard-name {
+        font-size: 1.5rem;
+      }
+
+      .bcard-front-content {
+        padding: 32px;
+      }
+
+      .bcard-qr-svg {
+        width: 100px;
+        height: 100px;
+      }
+
+      .contact-card-actions {
+        gap: 12px;
+      }
+
+      .contact-action-link {
+        padding: 10px 18px;
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2026 Sandhya Dhanasekar. Built for Impact.</div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
       </div>
-      <div class="contact-detail">
-        <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 0 0-4 0"/></svg></span>
-        <a href="https://www.linkedin.com/in/sandhya-dhanasekar" target="_blank" rel="noopener">LinkedIn profile</a>
-      </div>
-
-      <a href="Sandhya Dhanasekar_Resume_RA.pdf" class="btn btn-primary" style="margin-top:24px;" target="_blank">Download résumé</a>
     </div>
+  </footer>
 
-    <div class="reveal" style="display:flex;flex-direction:column;align-items:flex-start;justify-content:center;">
-      <h3 style="margin-bottom:12px;">Want to get in touch?</h3>
-      <p style="margin-bottom:24px;">Drop me an email and I'll get back to you.</p>
-      <a href="mailto:sandhyadhana17@gmail.com" class="btn btn-amber" style="font-size:1.1rem;padding:16px 36px;">Email me →</a>
-    </div>
-  </div>
-</section>
+  <script src="script.js"></script>
+  <script>
+    // ---- 3D Business Card: Tilt + Flip ----
+    (function () {
+      const scene = document.getElementById('bcardScene');
+      const card = document.getElementById('bcard');
+      if (!scene || !card) return;
 
-<footer>
-  <div class="wrap footer-inner">
-    <div class="copyright">© 2026 Sandhya Dhanasekar. Built with intent, not templates.</div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-    </div>
-  </div>
-</footer>
+      let isFlipped = false;
+      const MAX_TILT = 18; // degrees
 
-<script src="script.js"></script>
+      // Click to flip (but not when clicking interactive elements on back)
+      scene.addEventListener('click', (e) => {
+        // Don't flip when clicking links on the back face
+        if (e.target.closest('.bcard-contact-item') || e.target.closest('.bcard-qr-link')) return;
+        isFlipped = !isFlipped;
+        card.classList.toggle('flipped', isFlipped);
+        // Reset tilt on flip
+        if (isFlipped) {
+          card.style.transform = 'rotateY(180deg)';
+        } else {
+          card.style.transform = '';
+        }
+      });
+
+      // Mouse-tracking tilt effect
+      scene.addEventListener('mousemove', (e) => {
+        const rect = scene.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateY = ((x - centerX) / centerX) * MAX_TILT;
+        const rotateX = ((centerY - y) / centerY) * MAX_TILT;
+
+        const flipBase = isFlipped ? 180 : 0;
+        card.style.transition = 'transform 0.1s ease-out';
+        card.style.transform = `rotateY(${flipBase + rotateY}deg) rotateX(${rotateX}deg)`;
+
+        // Spotlight position
+        const spotX = ((x / rect.width) * 100).toFixed(1);
+        const spotY = ((y / rect.height) * 100).toFixed(1);
+        document.querySelectorAll('.bcard-spotlight').forEach(el => {
+          el.style.setProperty('--spot-x', spotX + '%');
+          el.style.setProperty('--spot-y', spotY + '%');
+        });
+      });
+
+      // Reset on mouse leave
+      scene.addEventListener('mouseleave', () => {
+        card.style.transition = 'transform 0.7s cubic-bezier(.4,.2,.2,1)';
+        card.style.transform = isFlipped ? 'rotateY(180deg)' : '';
+      });
+
+      // Touch support for mobile
+      let touchStartX = 0;
+      scene.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      scene.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchEndX - touchStartX;
+        // Swipe to flip
+        if (Math.abs(diff) > 40) {
+          isFlipped = !isFlipped;
+          card.classList.toggle('flipped', isFlipped);
+          card.style.transform = isFlipped ? 'rotateY(180deg)' : '';
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
+
 </html>
