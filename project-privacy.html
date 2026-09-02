@@ -62,8 +62,8 @@
   <div class="wrap">
     <div class="project-article reveal">
       <h2>1. Introduction</h2>
-      <p>Data is central to modern knowledge creation, business conduct, and governance [4]. However, mining large datasets often exposes sensitive individual information to multiple entities (data collectors, owners, users, and miners) [4].</p>
-      <p>A major privacy risk occurs when non-sensitive identifiers are linked to personal, sensitive information (e.g., physical, economic, or medical data) [4]. Consequently, data owners frequently hesitate to share information, creating barriers to effective data mining [4]. To address this, privacy-preserving techniques aim to remove an individual's identifiability without compromising the data's utility [4].</p>
+      <p>Data is central to modern knowledge creation, business conduct, and governance . However, mining large datasets often exposes sensitive individual information to multiple entities (data collectors, owners, users, and miners) .</p>
+      <p>A major privacy risk occurs when non-sensitive identifiers are linked to personal, sensitive information (e.g., physical, economic, or medical data) . Consequently, data owners frequently hesitate to share information, creating barriers to effective data mining . To address this, privacy-preserving techniques aim to remove an individual's identifiability without compromising the data's utility .</p>
     </div>
   </div>
 </section>
@@ -74,29 +74,29 @@
     <div class="section-head reveal">
       <p class="eyebrow">Data Taxonomy</p>
       <h2>2. Data Privacy and Categorization</h2>
-      <p>Before applying privacy-preserving methods, it is crucial to understand how data is categorized. Pramanik M et al. (2021) classify data into four distinct groups [4]:</p>
+      <p>Before applying privacy-preserving methods, it is crucial to understand how data is categorized. Pramanik M et al. (2021) classify data into four distinct groups :</p>
     </div>
     
     <div class="card-grid">
       <div class="card reveal">
         <div class="icon"><span class="material-symbols-outlined">badge</span></div>
         <h3>Identifiers (ID)</h3>
-        <p>Directly and uniquely identify an individual (e.g., full name, social security number) [4].</p>
+        <p>Directly and uniquely identify an individual (e.g., full name, social security number) .</p>
       </div>
       <div class="card reveal">
         <div class="icon"><span class="material-symbols-outlined">location_on</span></div>
         <h3>Quasi-identifiers (QID)</h3>
-        <p>Indirectly identify an individual when combined with external data (e.g., gender, age, postal code) [4].</p>
+        <p>Indirectly identify an individual when combined with external data (e.g., gender, age, postal code) .</p>
       </div>
       <div class="card reveal">
         <div class="icon"><span class="material-symbols-outlined">health_and_safety</span></div>
         <h3>Sensitive Attributes (SA)</h3>
-        <p>Private data that must be protected, such as medical history and salary data [4].</p>
+        <p>Private data that must be protected, such as medical history and salary data .</p>
       </div>
       <div class="card reveal">
         <div class="icon"><span class="material-symbols-outlined">public</span></div>
         <h3>Insensitive Attributes</h3>
-        <p>General, non-risky data that does not compromise individual privacy [4].</p>
+        <p>General, non-risky data that does not compromise individual privacy .</p>
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@
     <div class="section-head reveal" style="max-width:800px;">
       <p class="eyebrow">Techniques</p>
       <h2>3. Methods of Privacy-Preserving Data Mining (PPDM)</h2>
-      <p>PPDM involves conducting data mining on datasets containing confidential information in a multi-party setting, ensuring that each party's data remains undisclosed to others [4]. Common techniques include:</p>
+      <p>PPDM involves conducting data mining on datasets containing confidential information in a multi-party setting, ensuring that each party's data remains undisclosed to others . Common techniques include:</p>
     </div>
 
     <div class="methodology-grid">
@@ -118,7 +118,7 @@
           <div class="method-icon"><span class="material-symbols-outlined">blur_on</span></div>
           <h3>3.1 Data Perturbation</h3>
         </div>
-        <p>This method maintains statistical integrity by applying randomization and micro-aggregation to original data [4]. Research by Huang Z et al. (2005) explored how data correlation affects privacy in randomly perturbed datasets [4]. They proposed reconstruction methods based on Principal Component Analysis (PCA) and Bayes Estimate (BE), finding that the BE-based method was superior [4]. To prevent malicious data reconstruction, a modified random perturbation method using correlated random noises is utilized [4].</p>
+        <p>This method maintains statistical integrity by applying randomization and micro-aggregation to original data . Research by Huang Z et al. (2005) explored how data correlation affects privacy in randomly perturbed datasets . They proposed reconstruction methods based on Principal Component Analysis (PCA) and Bayes Estimate (BE), finding that the BE-based method was superior . To prevent malicious data reconstruction, a modified random perturbation method using correlated random noises is utilized .</p>
       </div>
       
       <!-- Method 2 -->
@@ -127,10 +127,10 @@
           <div class="method-icon"><span class="material-symbols-outlined">person_off</span></div>
           <h3>3.2 Anonymization</h3>
         </div>
-        <p>Anonymization safeguards data by removing identifiable details [4].</p>
+        <p>Anonymization safeguards data by removing identifiable details .</p>
         <ul style="margin-top:12px; padding-left:20px; color:var(--slate);">
-          <li style="margin-bottom:8px;"><strong>k-anonymity:</strong> Ensures that each row in a database cannot be distinguished from at least <em>k-1</em> other rows [4].</li>
-          <li><strong>Micro-aggregation for p-sensitive k-anonymity:</strong> Proposed by Solanas A et al. (2008), this method overcomes the information loss associated with traditional generalization and suppression techniques [4].</li>
+          <li style="margin-bottom:8px;"><strong>k-anonymity:</strong> Ensures that each row in a database cannot be distinguished from at least <em>k-1</em> other rows .</li>
+          <li><strong>Micro-aggregation for p-sensitive k-anonymity:</strong> Proposed by Solanas A et al. (2008), this method overcomes the information loss associated with traditional generalization and suppression techniques .</li>
         </ul>
       </div>
 
@@ -140,7 +140,7 @@
           <div class="method-icon"><span class="material-symbols-outlined">security_update_warning</span></div>
           <h3>3.3 Differential Privacy</h3>
         </div>
-        <p>Proposed by Dwork C (2008), this model protects database query results, specifically preventing the disclosure of a single record's existence across multiple databases [4]. Sanchez D et al. (2013) combined individual ranking micro-aggregation with e-differential privacy (adding Laplacian noise) to reduce noise scale and improve data utility [4].</p>
+        <p>Proposed by Dwork C (2008), this model protects database query results, specifically preventing the disclosure of a single record's existence across multiple databases . Sanchez D et al. (2013) combined individual ranking micro-aggregation with e-differential privacy (adding Laplacian noise) to reduce noise scale and improve data utility .</p>
       </div>
 
       <!-- Method 4 -->
@@ -149,7 +149,7 @@
           <div class="method-icon"><span class="material-symbols-outlined">account_tree</span></div>
           <h3>3.4 Hybrid Techniques</h3>
         </div>
-        <p>Researchers have combined methods to enhance protection [4]. For instance, Bhagat B et al. (2015) combined randomization and generalization to improve accuracy and allow data reconstruction without information loss [4]. Another hybrid approach combines noise addition with Secure Multiparty Computation (SMC), and pairs AES encryption with anonymization for superior security [4].</p>
+        <p>Researchers have combined methods to enhance protection . For instance, Bhagat B et al. (2015) combined randomization and generalization to improve accuracy and allow data reconstruction without information loss . Another hybrid approach combines noise addition with Secure Multiparty Computation (SMC), and pairs AES encryption with anonymization for superior security .</p>
       </div>
     </div>
   </div>
@@ -161,24 +161,24 @@
     <div class="reveal">
       <p class="eyebrow" style="color:#b5e48c;">Looking Ahead</p>
       <h2>4. Shortcomings and Future Directions</h2>
-      <p style="font-size:1.1rem; max-width:800px; margin-bottom:30px;">Despite the availability of various PPDM techniques, significant shortcomings remain [4]. These include:</p>
+      <p style="font-size:1.1rem; max-width:800px; margin-bottom:30px;">Despite the availability of various PPDM techniques, significant shortcomings remain . These include:</p>
       
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
         <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
           <h4 style="color:#fff;">Vulnerabilities</h4>
-          <p style="margin:0; font-size:0.95rem;">Vulnerabilities exist in established methods (e.g., specific attacks against k-anonymity) [4].</p>
+          <p style="margin:0; font-size:0.95rem;">Vulnerabilities exist in established methods (e.g., specific attacks against k-anonymity) .</p>
         </div>
         <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
           <h4 style="color:#fff;">Data Integrity</h4>
-          <p style="margin:0; font-size:0.95rem;">Challenges in data distribution, cloud computing privacy, and maintaining the integrity of mining results [4].</p>
+          <p style="margin:0; font-size:0.95rem;">Challenges in data distribution, cloud computing privacy, and maintaining the integrity of mining results .</p>
         </div>
         <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:24px; border-radius:12px;">
           <h4 style="color:#fff;">Scalability</h4>
-          <p style="margin:0; font-size:0.95rem;">Issues balancing data utility with scalability and performance when handling massive datasets [4].</p>
+          <p style="margin:0; font-size:0.95rem;">Issues balancing data utility with scalability and performance when handling massive datasets .</p>
         </div>
       </div>
       
-      <p style="margin-top:40px; font-size:1.1rem; max-width:800px; color:#b5e48c;">Future models must be efficient, scalable, and capable of handling large volumes of data [4]. They must combine different functionalities to meet the diverse requirements of clients while preserving both privacy and data integrity [4].</p>
+      <p style="margin-top:40px; font-size:1.1rem; max-width:800px; color:#b5e48c;">Future models must be efficient, scalable, and capable of handling large volumes of data . They must combine different functionalities to meet the diverse requirements of clients while preserving both privacy and data integrity .</p>
     </div>
   </div>
 </section>
@@ -188,7 +188,7 @@
   <div class="wrap">
     <div class="project-article reveal" style="text-align:center; max-width:800px; margin:0 auto;">
       <h2 style="font-size:2.2rem;">5. Conclusion</h2>
-      <p style="font-size:1.15rem; color:var(--navy);">As digital data grows at an unprecedented rate, current PPDM methods struggle to keep up [4]. Privacy-preserving big data analytics is still evolving, and current operations may fail to guarantee user privacy efficiently [4]. A comprehensive understanding of state-of-the-art methodologies is required to design the next generation of privacy-preserving big data analytics systems [4].</p>
+      <p style="font-size:1.15rem; color:var(--navy);">As digital data grows at an unprecedented rate, current PPDM methods struggle to keep up . Privacy-preserving big data analytics is still evolving, and current operations may fail to guarantee user privacy efficiently . A comprehensive understanding of state-of-the-art methodologies is required to design the next generation of privacy-preserving big data analytics systems .</p>
       
       <div style="margin-top:40px;">
         <a href="assets/Privacy%20Preserving%20in%20Data%20Mining.pdf" target="_blank" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:10px;">
